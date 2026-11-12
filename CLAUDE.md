@@ -1,5 +1,7 @@
 # CLAUDE.md
 
+🌐 **Português** | [English](CLAUDE.en.md)
+
 Orientações para o Claude Code ao trabalhar neste repositório.
 
 ## Visão geral
@@ -23,8 +25,9 @@ Open-Agents-Skills/
 │       └── examples/        # Exemplos de uso (opcional)
 ├── README.md                # Versão em português (principal)
 ├── README.en.md             # Versão em inglês
-├── LICENSE
-└── CLAUDE.md
+├── CLAUDE.md                # Orientações para o Claude Code (português)
+├── CLAUDE.en.md             # Orientações para o Claude Code (inglês)
+└── LICENSE
 ```
 
 A pasta `skills/` ainda pode não existir — crie-a ao adicionar a primeira Skill.
@@ -66,11 +69,11 @@ cp -r skills/<nome-da-skill> .claude/skills/        # do projeto
 
 Confirme que ela dispara pela `description` e também via `/<nome-da-skill>`.
 
-## READMEs bilíngues
+## Documentação bilíngue
 
-- `README.md` (PT) e `README.en.md` (EN) devem ficar **sincronizados**: qualquer alteração em um deve ser espelhada no outro na mesma mudança.
+- `README.md` (PT) ↔ `README.en.md` (EN) e `CLAUDE.md` (PT) ↔ `CLAUDE.en.md` (EN) devem ficar **sincronizados**: qualquer alteração em um deve ser espelhada no outro na mesma mudança.
 - As âncoras dos links internos diferem entre os idiomas (ex.: `#-o-que-é-uma-skill` vs `#-what-is-a-skill`) — ajuste ao traduzir.
-- Badges, logo (`assets/logo.png`, `width="420"`) e layout centralizado devem permanecer iguais nas duas versões.
+- Badges, logo (`assets/logo.png`, `width="420"`) e layout centralizado devem permanecer iguais nas duas versões do README.
 
 ## Fluxo Git: tipos, commits, branches e PRs
 
