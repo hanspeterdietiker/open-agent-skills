@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/logo.png" alt="Open Agent Skills — Discover • Share • Build" width="720" />
+<img src="assets/logo.png" alt="Open Agent Skills — Discover • Share • Build" width="420" />
 
 <br />
 <br />
