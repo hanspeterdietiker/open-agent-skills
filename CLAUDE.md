@@ -57,7 +57,7 @@ Regras:
 - Sempre que possível, inclua termos em **português e inglês** na `description` para melhorar o acionamento.
 - Uma boa Skill é **focada** (um tipo de problema), **acionável** (diz exatamente o que fazer) e **verificável** (tem critérios de sucesso).
 - Material longo vai em `references/`; o `SKILL.md` deve permanecer enxuto.
-- **Autoria e créditos:** todo `SKILL.md` declara `license` e `metadata` (`author`, `source`/`based-on`) no frontmatter e termina com uma seção `## Créditos / Credits`. Skills copiadas de terceiros mantêm o `LICENSE` original na pasta e registram o que foi alterado. Sub-skills referenciadas são listadas com autor e onde obtê-las. Atualize a tabela "Skills disponíveis" nos dois READMEs.
+- **Autoria e créditos:** todo `SKILL.md` declara `license` e `metadata` (`author`, `source`/`based-on`) no frontmatter e termina com uma seção `## Créditos / Credits`. Skills copiadas de terceiros mantêm o `LICENSE` original na pasta e registram o que foi alterado. Sub-skills referenciadas são listadas com autor e onde obtê-las. Adicione a Skill ao glossário "Skills disponíveis" nos dois READMEs, em ordem alfabética (descrição curta + linha `<sub>` com autor e base).
 - **Nada de regra de negócio:** antes de adicionar uma Skill vinda de um projeto, remova nomes de clientes/empresas, chaves de issue reais, URLs internas, caminhos locais, e-mails e regras específicas do domínio — use placeholders neutros (ex.: `PROJ-41`).
 
 ### Como testar uma Skill

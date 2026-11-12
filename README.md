@@ -95,13 +95,18 @@ description: Use quando o usuário pedir para criar um commit ou escrever uma me
 
 ## 📦 Skills disponíveis
 
-| Skill | Quando usar | Autor | Base / fonte |
-| --- | --- | --- | --- |
-| [`clean-code`](skills/clean-code/SKILL.md) | Escrever, revisar ou refatorar código seguindo os princípios de *Clean Code* | [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) (MIT) | Originalmente de [jackjin1997/ClawForge](https://github.com/jackjin1997/ClawForge); livro *Clean Code*, de Robert C. Martin |
-| [`conventional-commits`](skills/conventional-commits/SKILL.md) | Criar commits no padrão Conventional Commits | [hanspeterdietiker](https://github.com/hanspeterdietiker) | Especificação [Conventional Commits 1.0.0](https://www.conventionalcommits.org/pt-br/v1.0.0/) |
-| [`pull-request`](skills/pull-request/SKILL.md) | Abrir pull requests documentados com o `gh` | [hanspeterdietiker](https://github.com/hanspeterdietiker) | Skill `conventional-commits` + especificação Conventional Commits |
-| [`harness-loop`](skills/harness-loop/SKILL.md) | Projetar, depurar ou avaliar agentes de IA autônomos | [hanspeterdietiker](https://github.com/hanspeterdietiker) | Artigo da MindStudio [*Loop Engineering vs. Harness Engineering*](https://mindstudio.ai/blog/loop-engineering-vs-harness-engineering) |
-| [`loop-impl`](skills/loop-impl/SKILL.md) | Implementar um projeto/épico ticket a ticket em ciclos retomáveis | [hanspeterdietiker](https://github.com/hanspeterdietiker) | Sub-skills: `clean-code` (obrigatória), `harness-loop` (opcional) e [`orchestration`](https://github.com/stablyai/orca/tree/main/skills/orchestration), de [stablyai/orca](https://github.com/stablyai/orca) (opcional, externa, MIT) |
+Glossário em ordem alfabética — cada entrada leva à `SKILL.md` correspondente.
+
+- **[`clean-code`](skills/clean-code/SKILL.md)** — escrever, revisar ou refatorar código seguindo os princípios de *Clean Code*.
+  <br><sub>Autor: [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) (MIT) · Base: originalmente de [jackjin1997/ClawForge](https://github.com/jackjin1997/ClawForge); livro *Clean Code*, de Robert C. Martin</sub>
+- **[`conventional-commits`](skills/conventional-commits/SKILL.md)** — criar commits no padrão Conventional Commits.
+  <br><sub>Autor: [hanspeterdietiker](https://github.com/hanspeterdietiker) · Base: especificação [Conventional Commits 1.0.0](https://www.conventionalcommits.org/pt-br/v1.0.0/)</sub>
+- **[`harness-loop`](skills/harness-loop/SKILL.md)** — projetar, depurar ou avaliar agentes de IA autônomos.
+  <br><sub>Autor: [hanspeterdietiker](https://github.com/hanspeterdietiker) · Base: artigo da MindStudio [*Loop Engineering vs. Harness Engineering*](https://mindstudio.ai/blog/loop-engineering-vs-harness-engineering)</sub>
+- **[`loop-impl`](skills/loop-impl/SKILL.md)** — implementar um projeto/épico ticket a ticket em ciclos retomáveis.
+  <br><sub>Autor: [hanspeterdietiker](https://github.com/hanspeterdietiker) · Sub-skills: `clean-code` (obrigatória), `harness-loop` (opcional) e [`orchestration`](https://github.com/stablyai/orca/tree/main/skills/orchestration), de [stablyai/orca](https://github.com/stablyai/orca) (opcional, externa, MIT)</sub>
+- **[`pull-request`](skills/pull-request/SKILL.md)** — abrir pull requests documentados com o `gh`.
+  <br><sub>Autor: [hanspeterdietiker](https://github.com/hanspeterdietiker) · Base: skill `conventional-commits` + especificação Conventional Commits</sub>
 
 > 📜 Cada `SKILL.md` traz os campos `license` e `metadata` (autor e fonte) no frontmatter e uma seção **Créditos / Credits** no final. Skills de terceiros mantêm a licença original na própria pasta (ex.: [`skills/clean-code/LICENSE`](skills/clean-code/LICENSE)).
 
