@@ -57,7 +57,7 @@ Rules:
 - Whenever possible, include terms in **both Portuguese and English** in the `description` to improve triggering.
 - A good Skill is **focused** (one kind of problem), **actionable** (says exactly what to do) and **verifiable** (has success criteria).
 - Long material goes in `references/`; keep `SKILL.md` lean.
-- **Authorship and credits:** every `SKILL.md` declares `license` and `metadata` (`author`, `source`/`based-on`) in its frontmatter and ends with a `## Créditos / Credits` section. Skills copied from third parties keep the original `LICENSE` in their folder and record what was changed. Referenced sub-skills are listed with their author and where to get them. Update the "Available skills" table in both READMEs.
+- **Authorship and credits:** every `SKILL.md` declares `license` and `metadata` (`author`, `source`/`based-on`) in its frontmatter and ends with a `## Créditos / Credits` section. Skills copied from third parties keep the original `LICENSE` in their folder and record what was changed. Referenced sub-skills are listed with their author and where to get them. Add the Skill to the "Available skills" glossary in both READMEs, in alphabetical order (short description + a `<sub>` line with author and basis).
 - **No business rules:** before adding a Skill taken from a project, remove client/company names, real issue keys, internal URLs, local paths, emails and domain-specific rules — use neutral placeholders (e.g. `PROJ-41`).
 
 ### How to test a Skill

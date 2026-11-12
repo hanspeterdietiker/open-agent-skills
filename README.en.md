@@ -95,13 +95,18 @@ description: Use when the user asks to create a commit or write a commit message
 
 ## 📦 Available skills
 
-| Skill | When to use | Author | Basis / source |
-| --- | --- | --- | --- |
-| [`clean-code`](skills/clean-code/SKILL.md) | Writing, reviewing or refactoring code following *Clean Code* principles | [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) (MIT) | Originally from [jackjin1997/ClawForge](https://github.com/jackjin1997/ClawForge); *Clean Code* book by Robert C. Martin |
-| [`conventional-commits`](skills/conventional-commits/SKILL.md) | Creating commits following Conventional Commits | [hanspeterdietiker](https://github.com/hanspeterdietiker) | [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/) specification |
-| [`pull-request`](skills/pull-request/SKILL.md) | Opening well-documented pull requests with `gh` | [hanspeterdietiker](https://github.com/hanspeterdietiker) | `conventional-commits` skill + Conventional Commits specification |
-| [`harness-loop`](skills/harness-loop/SKILL.md) | Designing, debugging or evaluating autonomous AI agents | [hanspeterdietiker](https://github.com/hanspeterdietiker) | MindStudio article [*Loop Engineering vs. Harness Engineering*](https://mindstudio.ai/blog/loop-engineering-vs-harness-engineering) |
-| [`loop-impl`](skills/loop-impl/SKILL.md) | Implementing a project/epic ticket by ticket in resumable cycles | [hanspeterdietiker](https://github.com/hanspeterdietiker) | Sub-skills: `clean-code` (required), `harness-loop` (optional) and [`orchestration`](https://github.com/stablyai/orca/tree/main/skills/orchestration) from [stablyai/orca](https://github.com/stablyai/orca) (optional, external, MIT) |
+Alphabetical glossary — each entry links to its `SKILL.md`.
+
+- **[`clean-code`](skills/clean-code/SKILL.md)** — writing, reviewing or refactoring code following *Clean Code* principles.
+  <br><sub>Author: [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) (MIT) · Basis: originally from [jackjin1997/ClawForge](https://github.com/jackjin1997/ClawForge); *Clean Code* book by Robert C. Martin</sub>
+- **[`conventional-commits`](skills/conventional-commits/SKILL.md)** — creating commits following Conventional Commits.
+  <br><sub>Author: [hanspeterdietiker](https://github.com/hanspeterdietiker) · Basis: [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/) specification</sub>
+- **[`harness-loop`](skills/harness-loop/SKILL.md)** — designing, debugging or evaluating autonomous AI agents.
+  <br><sub>Author: [hanspeterdietiker](https://github.com/hanspeterdietiker) · Basis: MindStudio article [*Loop Engineering vs. Harness Engineering*](https://mindstudio.ai/blog/loop-engineering-vs-harness-engineering)</sub>
+- **[`loop-impl`](skills/loop-impl/SKILL.md)** — implementing a project/epic ticket by ticket in resumable cycles.
+  <br><sub>Author: [hanspeterdietiker](https://github.com/hanspeterdietiker) · Sub-skills: `clean-code` (required), `harness-loop` (optional) and [`orchestration`](https://github.com/stablyai/orca/tree/main/skills/orchestration) from [stablyai/orca](https://github.com/stablyai/orca) (optional, external, MIT)</sub>
+- **[`pull-request`](skills/pull-request/SKILL.md)** — opening well-documented pull requests with `gh`.
+  <br><sub>Author: [hanspeterdietiker](https://github.com/hanspeterdietiker) · Basis: `conventional-commits` skill + Conventional Commits specification</sub>
 
 > 📜 Every `SKILL.md` carries `license` and `metadata` (author and source) fields in its frontmatter and a **Créditos / Credits** section at the end. Third-party skills keep their original license in their own folder (e.g. [`skills/clean-code/LICENSE`](skills/clean-code/LICENSE)).
 
