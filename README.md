@@ -26,6 +26,7 @@
 
 [Sobre](#-sobre-o-projeto) •
 [O que é uma Skill](#-o-que-é-uma-skill) •
+[Skills disponíveis](#-skills-disponíveis) •
 [Estrutura](#-estrutura-do-repositório) •
 [Como usar](#-como-usar) •
 [Como contribuir](#-como-contribuir) •
@@ -92,6 +93,20 @@ description: Use quando o usuário pedir para criar um commit ou escrever uma me
 
 ---
 
+## 📦 Skills disponíveis
+
+| Skill | Quando usar | Autor | Base / fonte |
+| --- | --- | --- | --- |
+| [`clean-code`](skills/clean-code/SKILL.md) | Escrever, revisar ou refatorar código seguindo os princípios de *Clean Code* | [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) (MIT) | Originalmente de [jackjin1997/ClawForge](https://github.com/jackjin1997/ClawForge); livro *Clean Code*, de Robert C. Martin |
+| [`conventional-commits`](skills/conventional-commits/SKILL.md) | Criar commits no padrão Conventional Commits | [hanspeterdietiker](https://github.com/hanspeterdietiker) | Especificação [Conventional Commits 1.0.0](https://www.conventionalcommits.org/pt-br/v1.0.0/) |
+| [`pull-request`](skills/pull-request/SKILL.md) | Abrir pull requests documentados com o `gh` | [hanspeterdietiker](https://github.com/hanspeterdietiker) | Skill `conventional-commits` + especificação Conventional Commits |
+| [`harness-loop`](skills/harness-loop/SKILL.md) | Projetar, depurar ou avaliar agentes de IA autônomos | [hanspeterdietiker](https://github.com/hanspeterdietiker) | Artigo da MindStudio [*Loop Engineering vs. Harness Engineering*](https://mindstudio.ai/blog/loop-engineering-vs-harness-engineering) |
+| [`loop-impl`](skills/loop-impl/SKILL.md) | Implementar um projeto/épico ticket a ticket em ciclos retomáveis | [hanspeterdietiker](https://github.com/hanspeterdietiker) | Sub-skills: `clean-code` (obrigatória), `harness-loop` (opcional) e [`orchestration`](https://github.com/stablyai/orca/tree/main/skills/orchestration), de [stablyai/orca](https://github.com/stablyai/orca) (opcional, externa, MIT) |
+
+> 📜 Cada `SKILL.md` traz os campos `license` e `metadata` (autor e fonte) no frontmatter e uma seção **Créditos / Credits** no final. Skills de terceiros mantêm a licença original na própria pasta (ex.: [`skills/clean-code/LICENSE`](skills/clean-code/LICENSE)).
+
+---
+
 ## 🗂️ Estrutura do repositório
 
 ```text
@@ -112,6 +127,7 @@ Open-Agents-Skills/
 - Nomes de pastas em `kebab-case` (ex.: `code-review`, `gerador-de-relatorios`).
 - O `name` no frontmatter deve ser igual ao nome da pasta.
 - Skills podem ser escritas em português ou inglês — se possível, inclua a `description` com termos nos dois idiomas para melhorar o acionamento.
+- Skills de terceiros ou inspiradas em outros trabalhos devem creditar autor e fonte (`metadata` no frontmatter + seção **Créditos / Credits**) e, quando copiadas, manter a licença original na pasta da Skill.
 
 ---
 
