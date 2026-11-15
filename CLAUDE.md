@@ -62,12 +62,15 @@ Regras:
 
 ### Como testar uma Skill
 
-Não há testes automatizados. Para validar, copie a Skill para o diretório de Skills do Claude Code e acione-a numa tarefa real:
+Não há testes automatizados. Para validar, instale a Skill a partir do clone local com o [`skills`](https://github.com/vercel-labs/skills) CLI e acione-a numa tarefa real:
 
 ```bash
-cp -r skills/<nome-da-skill> ~/.claude/skills/      # pessoal
-cp -r skills/<nome-da-skill> .claude/skills/        # do projeto
+npx skills add . --list                                               # confere se a Skill é detectada
+npx skills add . --skill <nome-da-skill> -a claude-code --copy -g     # pessoal (~/.claude/skills/)
+npx skills add . --skill <nome-da-skill> -a claude-code --copy        # do projeto (.claude/skills/)
 ```
+
+Os usuários finais instalam direto do GitHub: `npx skills add hanspeterdietiker/Open-Agents-Skills --skill <nome-da-skill>`.
 
 Confirme que ela dispara pela `description` e também via `/<nome-da-skill>`.
 

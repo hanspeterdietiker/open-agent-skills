@@ -62,12 +62,15 @@ Rules:
 
 ### How to test a Skill
 
-There are no automated tests. To validate, copy the Skill into Claude Code's Skills directory and trigger it on a real task:
+There are no automated tests. To validate, install the Skill from the local clone with the [`skills`](https://github.com/vercel-labs/skills) CLI and trigger it on a real task:
 
 ```bash
-cp -r skills/<skill-name> ~/.claude/skills/      # personal
-cp -r skills/<skill-name> .claude/skills/        # project
+npx skills add . --list                                          # check the Skill is detected
+npx skills add . --skill <skill-name> -a claude-code --copy -g   # personal (~/.claude/skills/)
+npx skills add . --skill <skill-name> -a claude-code --copy      # project (.claude/skills/)
 ```
+
+End users install straight from GitHub: `npx skills add hanspeterdietiker/Open-Agents-Skills --skill <skill-name>`.
 
 Confirm it triggers from its `description` and also via `/<skill-name>`.
 

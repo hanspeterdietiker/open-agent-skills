@@ -140,27 +140,36 @@ Open-Agents-Skills/
 
 ### With Claude Code
 
-1. Clone the repository:
+Install via `npx` with the [`skills`](https://github.com/vercel-labs/skills) CLI — no need to clone the repository (requires [Node.js](https://nodejs.org/) 22.20+):
+
+1. List the available Skills:
 
    ```bash
-   git clone https://github.com/hanspeterdietiker/Open-Agents-Skills.git
+   npx skills add hanspeterdietiker/Open-Agents-Skills --list
    ```
 
-2. Copy the desired Skill folder into Claude Code's Skills directory:
+2. Install the Skill you want:
 
    ```bash
-   # Personal Skills (available in all your projects)
-   cp -r Open-Agents-Skills/skills/<skill-name> ~/.claude/skills/
+   # Project Skills (in .claude/skills/, shared with your team via git)
+   npx skills add hanspeterdietiker/Open-Agents-Skills --skill <skill-name> -a claude-code
 
-   # Project Skills (shared with your team via git)
-   cp -r Open-Agents-Skills/skills/<skill-name> .claude/skills/
+   # Personal Skills (in ~/.claude/skills/, available in all your projects)
+   npx skills add hanspeterdietiker/Open-Agents-Skills --skill <skill-name> -a claude-code -g
+
+   # All Skills at once
+   npx skills add hanspeterdietiker/Open-Agents-Skills --skill '*' -a claude-code
    ```
+
+   To update later: `npx skills update`. To remove: `npx skills remove <skill-name>`.
 
 3. Done! Claude will automatically trigger the Skill whenever the task matches its description — or you can invoke it directly with `/<skill-name>`.
 
 ### With other agents
 
-The `SKILL.md` format is simple and Markdown-based, so it can be adapted to other agents and frameworks: just include the Skill's content in the agent's context when the matching task is detected.
+The same command installs into other agents supported by the CLI (Codex, Cursor, Gemini CLI, GitHub Copilot and more) — swap `-a claude-code` for the agent you want, or omit `-a` to pick interactively.
+
+The `SKILL.md` format is simple and Markdown-based, so it can also be adapted to other agents and frameworks: just include the Skill's content in the agent's context when the matching task is detected.
 
 ---
 
